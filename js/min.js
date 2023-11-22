@@ -1,10 +1,10 @@
 // récuperer les valeurs des champs
-const prénom = document.querySelector('prénom');
-const mail = document.querySelector('mail');
-const tel = document.querySelector('tel');
+const prénom = document.querySelector('.prénom');
+const mail = document.querySelector('.mail');
+const tel = document.querySelector('.tel');
 const error = document.querySelector('.error');
-const submit = document.querySelector('submit');
-const affiche = document.querySelector('affiche');
+const submit = document.querySelector('.submit');
+const affiche = document.querySelector('.affiche');
 
 // validation des inputs
 
