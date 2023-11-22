@@ -10,7 +10,7 @@ const affiche = document.querySelector('affiche');
 
 submit.addEventListener('click', (event) => {
     if (prénom.value == ""){
-        error.innerHTML = `<span>nom est vide</span> `;
+        error.innerHTML = `<span>prenom est vide</span> `;
         return;
     }
     if (!/^[a-zA-Z]+$/.test(prénom)) {
@@ -22,7 +22,7 @@ submit.addEventListener('click', (event) => {
       error.innerHTML = `<span>mail est vide</span> `;
       return;
   }
-  if (!/^[a-zA-Z0-9]+@[a-zA-Z]+[?:\.com .fr .tn]$/) {
+  if (!/^[a-zA-Z0-9]+@[a-zA-Z]+[?:\.com.fr.tn]$/) {
     error.innerHTML = `<span>"mail doit contenir @ et .com .fr .tn"</span> `; 
     return;
 }
@@ -43,6 +43,13 @@ submit.addEventListener('click', (event) => {
    }
    return null;
    // afficher le resultat dans le champs affiche
+   affiche.innerHTML = `
+   <h1>Votre Prenom : </h1>
+   ${prénom.value}
+   <h1>Votre mail : </h1>
+   ${mail.value}
+   <h1>Votre tel : </h1>
+   ${tel.value}`
 
 })
   
