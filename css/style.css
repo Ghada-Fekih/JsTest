@@ -1,0 +1,12 @@
+.affiche{
+    width: 330px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid blue;
+    height: 100%;
+    background-color:#f1f1f1;
+}
+.bouton{
+  margin-left: 500px;
+  margin-top: 50px;
+}
